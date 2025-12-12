@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- SEO BASIC -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Portofolio pribadi [Nama Anda]. Berisi informasi diri, keahlian, pengalaman, dan karya.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:title" content="Portofolio: [Nama Anda]">
+    <meta property="og:image" content="foto-profil.jpg">
+
+    <title>Portofolio [Nama Anda]</title>
+
+    <!-- LINK KE CSS TERPISAH -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1 tabindex="0">Portofolio [Nama Anda]</h1>
+</header>
+
+<nav aria-label="Navigasi Utama">
+    <a href="#tentang">Tentang</a>
+    <a href="#pendidikan">Pendidikan</a>
+    <a href="#keahlian">Keahlian</a>
+    <a href="#projek">Projek</a>
+    <a href="#kontak">Kontak</a>
+</nav>
+
+<main>
+
+<section id="tentang">
+    <h2>Tentang Saya</h2>
+
+    <article>
+        <img src="foto-profil.jpg" alt="Foto [Nama Anda] sedang tersenyum menghadap kamera">
+        <p>
+            Halo! Saya adalah seorang web developer yang tertarik pada desain modern dan aksesibilitas web.
+            Saya telah mempelajari banyak konsep termasuk 
+            <abbr title="HyperText Markup Language">HTML</abbr>
+            dan web semantics.
+        </p>
+    </article>
+
+    <aside class="aside-box" aria-label="Fakta Singkat">
+        <p><strong>Fakta Singkat:</strong> Saya mulai belajar coding sejak 
+            <time datetime="2022-01-01">2022</time>.
+        </p>
+    </aside>
+</section>
+
+<section id="pendidikan">
+    <h2>Riwayat Pendidikan / Pengalaman</h2>
+
+    <table aria-describedby="deskripsi-tabel">
+        <caption id="deskripsi-tabel">Tabel riwayat pendidikan dan pengalaman saya</caption>
+
+        <thead>
+            <tr>
+                <th>Tahun</th>
+                <th colspan="2">Keterangan</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td><time datetime="2019">2019</time></td>
+                <td>SMA Negeri 1</td>
+                <td>Lulus</td>
+            </tr>
+            <tr>
+                <td><time datetime="2023">2023</time></td>
+                <td>Kursus Web Development</td>
+                <td>Selesai</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="3">Data diperbarui pada 
+                    <time datetime="2025-01-01">Januari 2025</time>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</section>
+
+<section id="keahlian">
+    <h2>Keahlian</h2>
+
+    <ul>
+        <li>HTML Semantics</li>
+        <li>CSS Styling</li>
+        <li>Responsive Design</li>
+        <li>UI/UX Understanding</li>
+    </ul>
+
+    <dl>
+        <dt>Frontend</dt>
+        <dd>Pengalaman membuat tampilan website modern.</dd>
+
+        <dt>Desain</dt>
+        <dd>Mengerti prinsip warna & tipografi.</dd>
+    </dl>
+</section>
+
+<section id="projek">
+    <h2>Projek Saya</h2>
+
+    <article>
+        <h3>Website Landing Page</h3>
+        <img src="contoh-projek.jpg" alt="Tampilan website landing page buatan saya">
+        <p><a href="https://example.com" target="_blank">Kunjungi Projek</a></p>
+    </article>
+
+    <article>
+        <h3>Video Demo Projek</h3>
+        <iframe width="300" height="200" src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+            title="YouTube video demo projek" allowfullscreen></iframe>
+    </article>
+
+    <video controls width="320">
+        <source src="video-demo.mp4" type="video/mp4">
+        Browser Anda tidak mendukung video.
+    </video>
+</section>
+
+<section id="kontak">
+    <h2>Hubungi Saya</h2>
+
+    <form>
+
+        <fieldset>
+            <legend>Form Kontak</legend>
+
+            <label for="nama">Nama:</label><br>
+            <input type="text" id="nama" name="nama" required minlength="3" maxlength="50"><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="nomor">Nomor HP:</label><br>
+            <input type="tel" id="nomor" name="nomor" required minlength="10" maxlength="15"><br><br>
+
+            <label for="pesan">Pesan:</label><br>
+            <textarea id="pesan" name="pesan" required minlength="5"></textarea><br><br>
+
+            <p>Jenis Kontak:</p>
+            <input type="radio" id="saran" name="jenis" value="saran">
+            <label for="saran">Saran</label>
+
+            <input type="radio" id="pertanyaan" name="jenis" value="pertanyaan">
+            <label for="pertanyaan">Pertanyaan</label><br><br>
+
+            <input type="checkbox" id="setuju" required>
+            <label for="setuju">Saya menyetujui syarat dan ketentuan</label><br><br>
+
+            <button type="submit">Kirim</button>
+        </fieldset>
+    </form>
+</section>
+
+</main>
+
+<footer>
+    <p>&copy; <time datetime="2025">2025</time> [Nama Anda]. Semua Hak Dilindungi.</p>
+</footer>
+
+</body>
+</html>
