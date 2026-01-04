@@ -1,0 +1,58 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Times New Roman", serif;
+}
+
+/* Body */
+body {
+    background-color: #f4f6f8;
+    padding: 40px;
+}
+
+/* Judul */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Container list */
+.list {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Hilangkan bullet */
+.list ul {
+    list-style: none;
+}
+
+/* Item list */
+.list ul li {
+    margin-bottom: 15px;
+}
+
+/* Link */
+.list ul li a {
+    display: block;
+    padding: 12px 15px;
+    text-decoration: none;
+    color: #1a73e8;
+    background-color: #f1f5ff;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+/* Hover */
+.list ul li a:hover {
+    background-color: #1a73e8;
+    color: #ffffff;
+    transform: translateX(5px);
+}
